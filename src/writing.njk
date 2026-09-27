@@ -1,0 +1,79 @@
+---
+layout: layouts/base.njk
+title: Writing & Media
+nav: writing
+permalink: /writing/
+description: Essays, videos, webinars and daily affirmations on mental health, trauma, parenting and faith by Philip Dimka.
+---
+<section class="wrap page-intro" style="padding-bottom:40px">
+  <div class="inner">
+    <span class="eyebrow">Writing &amp; Media</span>
+    <h1>{{ writing.headline_before }} <em class="hl">{{ writing.headline_highlight }}</em>{{ writing.headline_after }}</h1>
+    <p class="lead" style="max-width:720px">{{ writing.intro }}</p>
+  </div>
+</section>
+
+<nav class="wrap chips" aria-label="Jump to" style="padding-bottom:48px">
+  <a class="chip is-active" href="#essays">Essays</a>
+  <a class="chip" href="#videos">Videos &amp; webinars</a>
+  <a class="chip" href="#affirmations">Affirmations</a>
+  <a class="chip" href="#podcast">Podcast</a>
+</nav>
+
+<section id="essays" class="wrap" aria-label="Essays">
+  <div data-substack-list data-count="1" data-variant="featured">
+    <div class="featured post is-loading" aria-hidden="true"><div class="thumb"></div><div class="body"><h3>Loading latest essay</h3></div></div>
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="more-title">
+  <div class="head-row">
+    <h2 id="more-title" style="font-size:clamp(28px,3vw,44px)">More essays</h2>
+    <a class="text-link" href="{{ settings.substack_url }}" rel="noopener" target="_blank">All posts on Substack →</a>
+  </div>
+  <div class="grid grid-3" style="row-gap:48px" data-substack-list data-count="6" data-offset="1" data-variant="card"></div>
+</section>
+
+<section id="videos" class="wrap" style="padding-bottom:var(--section)" aria-labelledby="videos-title">
+  <div class="head-row">
+    <h2 id="videos-title" style="font-size:clamp(28px,3vw,44px)">Videos &amp; webinars</h2>
+    <a class="text-link" href="{{ settings.social.youtube }}" rel="noopener" target="_blank">Watch on YouTube →</a>
+  </div>
+  {%- if writing.videos and writing.videos.length %}
+  <div class="grid grid-3">
+    {%- for v in writing.videos %}
+    {%- set vid = v.url | youtubeId %}
+    <a class="video" href="{{ v.url }}" rel="noopener" target="_blank">
+      <div class="thumb">
+        {%- if vid %}<img src="https://i.ytimg.com/vi/{{ vid }}/hqdefault.jpg" alt="" loading="lazy">{% endif %}
+        {% set icon = "play" %}{% include "partials/icon.njk" %}
+      </div>
+      <h3>{{ v.title }}</h3>
+    </a>
+    {%- endfor %}
+  </div>
+  {%- else %}
+  <p class="feed-note">New videos and webinar recordings will appear here soon. In the meantime, visit the YouTube channel.</p>
+  {%- endif %}
+</section>
+
+<section class="wrap grid grid-2">
+  <div id="affirmations" class="panel panel-green stack" style="gap:18px;padding:clamp(28px,4vw,56px)">
+    <span class="eyebrow on-dark">Daily Affirmations</span>
+    <h2 style="font-size:clamp(26px,2.6vw,38px);line-height:1.15">{{ writing.affirmations_title }}</h2>
+    <p>{{ writing.affirmations_text }}</p>
+    <div><a class="btn btn-light" href="{{ settings.affirmation_app_url }}">Open today's affirmation</a></div>
+  </div>
+  <div id="podcast" class="panel panel-sand stack" style="gap:18px;padding:clamp(28px,4vw,56px)">
+    <span class="eyebrow">{{ writing.podcast_status }}</span>
+    <h2 style="font-size:clamp(26px,2.6vw,38px);line-height:1.15">{{ writing.podcast_title }}</h2>
+    <p class="muted">{{ writing.podcast_text }}</p>
+    <div>
+      {%- if writing.podcast_link %}
+      <a class="btn btn-outline" href="{{ writing.podcast_link }}" rel="noopener" target="_blank">Listen now</a>
+      {%- else %}
+      <a class="btn btn-outline" href="/#subscribe">Notify me</a>
+      {%- endif %}
+    </div>
+  </div>
+</section>

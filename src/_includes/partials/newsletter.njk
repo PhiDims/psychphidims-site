@@ -1,0 +1,18 @@
+<section id="subscribe" class="wrap" aria-labelledby="subscribe-title">
+  <div class="panel panel-sand newsletter">
+    <div class="copy">
+      <h2 id="subscribe-title">{{ home.newsletter_title }}</h2>
+      <p class="lead">{{ home.newsletter_text }}</p>
+    </div>
+    <form class="form" action="{{ settings.substack_url | trimSlash }}/subscribe" method="get" target="_blank" data-subscribe>
+      <div class="field">
+        <label for="subscribe-email">Email address</label>
+        <div class="inline-form">
+          <input class="input" id="subscribe-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+      </div>
+      <span class="form-note">Delivered through Substack. You'll confirm on the next screen.</span>
+    </form>
+  </div>
+</section>

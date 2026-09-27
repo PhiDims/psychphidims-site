@@ -1,0 +1,9 @@
+{
+  "intro": "For speaking and training invitations, media requests and collaborations. I read every message and aim to reply within {days} working days.",
+  "therapy_title": "Looking for therapy?",
+  "therapy_text": "Please don't share personal or clinical details through this form. Therapy appointments for adults, children and families are booked through Balm Therapeutic Services.",
+  "emergency_text": "If you or someone else is in immediate danger, call 112 or go to the nearest hospital. This form is not monitored for urgent needs.",
+  "enquiry_types": ["Speaking invitation", "Training or workshop", "Supervision or consultation", "Media or interview", "Collaboration", "Something else"],
+  "thanks_title": "Thank you. Your message is on its way.",
+  "thanks_text": "I read every message personally and will reply as soon as I can."
+}

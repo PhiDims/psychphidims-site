@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+title: Speaking & Training
+nav: speaking
+permalink: /speaking/
+description: Keynotes, workshops, trainings and supervision on trauma-informed care, play therapy, child mental health, and faith and mental health.
+---
+<section class="wrap page-intro">
+  <div class="intro-split">
+    <div class="stack" style="gap:24px">
+      <span class="eyebrow">Speaking &amp; Training</span>
+      <h1>{{ speaking.headline_before }} <em class="hl">{{ speaking.headline_highlight }}</em>{{ speaking.headline_after }}</h1>
+    </div>
+    <div>
+      <p class="lead">{{ speaking.intro }}</p>
+      <a class="btn btn-primary" href="/contact/">Invite Philip to speak</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  {%- set photoSrc = settings.images.training_photo %}{% set photoAlt = settings.owner_name + " facilitating a training" %}{% set photoClass = "" %}
+  <div style="height:clamp(240px,31vw,440px);display:flex">{% include "partials/photo.njk" %}</div>
+</div>
+
+<section class="wrap section" aria-labelledby="topics-title">
+  <div class="head">
+    <span class="eyebrow">Popular topics</span>
+    <h2 id="topics-title">{{ speaking.topics_title }}</h2>
+  </div>
+  <div class="grid grid-3" style="gap:24px">
+    {%- for t in speaking.topics %}
+    <article class="card">
+      <span class="num">{{ loop.index | pad2 }}</span>
+      <h3 style="font-size:clamp(21px,1.9vw,26px)">{{ t.title }}</h3>
+      <p>{{ t.text }}</p>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="band-dark" aria-labelledby="formats-title">
+  <div class="wrap section">
+    <div class="head">
+      <span class="eyebrow on-dark">Formats</span>
+      <h2 id="formats-title">{{ speaking.formats_title }}</h2>
+    </div>
+    <div class="grid grid-4">
+      {%- for f in speaking.formats %}
+      <div class="rule-item"><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- set hasEng = speaking.engagements and speaking.engagements.length %}
+{%- set hasQuote = speaking.testimonial and speaking.testimonial.quote %}
+{%- if hasEng or hasQuote %}
+<section class="wrap section">
+  <div class="grid {{ 'grid-2' if (hasEng and hasQuote) else '' }}" style="gap:clamp(40px,5.5vw,80px)">
+    {%- if hasEng %}
+    <div class="stack" style="gap:24px">
+      <span class="eyebrow">Recent engagements</span>
+      <ul class="line-list">
+        {%- for e in speaking.engagements %}
+        <li class="engagement">{{ e.event }}<span>{{ e.host }}{% if e.year %}, {{ e.year }}{% endif %}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+    {%- if hasQuote %}
+    <figure class="card quote">
+      <blockquote>“{{ speaking.testimonial.quote }}”</blockquote>
+      <figcaption>{{ speaking.testimonial.name }}{% if speaking.testimonial.role %}, {{ speaking.testimonial.role }}{% endif %}</figcaption>
+    </figure>
+    {%- endif %}
+  </div>
+</section>
+{%- else %}
+<div style="height:var(--section)"></div>
+{%- endif %}
+
+<section class="wrap" aria-labelledby="book-title">
+  <div class="panel panel-sand stack" style="gap:36px">
+    <h2 id="book-title" style="font-size:clamp(28px,2.8vw,40px)">How to book</h2>
+    <div class="steps">
+      {%- for s in speaking.steps %}
+      <div class="step"><span class="n">{{ loop.index }}</span><h3>{{ s.title }}</h3><p>{{ s.text }}</p></div>
+      {%- endfor %}
+    </div>
+    <div><a class="btn btn-primary" href="/contact/">Start an enquiry</a></div>
+  </div>
+</section>

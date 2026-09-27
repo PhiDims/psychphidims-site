@@ -1,0 +1,23 @@
+{
+  "headline_before": "Clinician, trainer and a voice for",
+  "headline_highlight": "healing",
+  "headline_after": "in everyday language.",
+  "intro": "Philip Dimka is a clinical psychologist, trauma therapist and play therapist based in Jos, Plateau State, Nigeria. He works with adults, adolescents, children and families, and trains the people who care for them.",
+  "story_title": "Why this work matters to me",
+  "story": "[Your story in your own words: what drew you to psychology, and the moment you knew trauma and children's mental health would be your life's work.]\n\nMuch of Philip's work is with conflict-affected and displaced communities in North Central Nigeria, where pain is often carried quietly and help is hard to reach. He moves between the clinic, the church and the community, translating psychology into language people can use at home, in the pulpit and in the classroom.\n\n[A closing line on what you hope people carry away from your work.]",
+  "commitments_title": "Four commitments behind everything I do",
+  "commitments": [
+    { "title": "Clinically grounded", "text": "Evidence-based methods, practised with care and professional integrity." },
+    { "title": "Trauma-informed", "text": "Safety first. People are more than what happened to them." },
+    { "title": "Faith-integrated", "text": "Psychology and faith in honest conversation, not in competition." },
+    { "title": "Culturally rooted", "text": "Care that fits Nigerian families, languages and ways of life." }
+  ],
+  "expertise": ["Child-Centred Play Therapy", "Theraplay", "EMDR", "Trauma-informed care"],
+  "credentials": "Education and certifications: [Degrees, licensure and certifications]",
+  "roles": [
+    { "title": "Clinical Director", "organisation": "Balm Therapeutic Services, Jos" },
+    { "title": "Vice President", "organisation": "Association of Play Therapy Nigeria (APTN)" },
+    { "title": "Trauma Implementer Lead", "organisation": "Shalom Trauma Centre, AFS Nigeria" }
+  ],
+  "cta_title": "Planning a conference, retreat or staff training?"
+}

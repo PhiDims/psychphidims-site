@@ -1,0 +1,26 @@
+{
+  "eyebrow": "Philip Dimka | PsychPhiDims",
+  "headline_before": "Psychology, mental health,",
+  "headline_highlight": "healing",
+  "headline_after": "and growth.",
+  "intro": "Helping individuals, families, churches and communities understand the mind, heal from trauma and grow whole. Grounded in clinical practice, shaped by faith, rooted in Jos, Nigeria.",
+  "primary_button": "Get the weekly letter",
+  "secondary_button": "Invite Philip to speak",
+  "fallback_affirmation": "I am allowed to heal at my own pace. Today, I choose one small step toward wholeness.",
+  "doors_eyebrow": "Where to begin",
+  "doors_title": "Three ways to walk with me",
+  "doors": [
+    { "title": "Learn", "icon": "book", "text": "Essays, videos, webinars and daily affirmations on mental health, trauma, parenting and faith, written for everyday people.", "link_text": "Read and watch", "link": "/writing/" },
+    { "title": "Train", "icon": "person", "text": "Keynotes, workshops and supervision in trauma-informed care, play therapy and child mental health for churches, schools, NGOs and professionals.", "link_text": "Speaking & training", "link": "/speaking/" },
+    { "title": "Heal", "icon": "heart", "text": "Looking for therapy for yourself, your child or your family? Appointments are handled through Balm Therapeutic Services.", "link_text": "Visit Balm Therapeutic Services", "link": "balm" }
+  ],
+  "affiliations": [
+    { "name": "Balm Therapeutic Services", "role": "Clinical Director" },
+    { "name": "Association of Play Therapy Nigeria", "role": "Vice President" },
+    { "name": "Shalom Trauma Centre, AFS Nigeria", "role": "Trauma Implementer Lead" }
+  ],
+  "about_title": "Clinical depth, faith and culture in one conversation.",
+  "about_text": "Philip Dimka is a clinical psychologist, trauma therapist and play therapist based in Jos, Plateau State. His work spans Child-Centred Play Therapy, Theraplay, EMDR and trauma-informed care, with a focus on conflict-affected and displaced communities in North Central Nigeria.\n\nHe moves between the clinic, the church and the community, translating psychology into language people can use at home, in the pulpit and in the classroom.",
+  "newsletter_title": "A weekly letter for the mind and the heart.",
+  "newsletter_text": "One short, practical piece each week on mental health, healing and growth. Free, and easy to unsubscribe."
+}

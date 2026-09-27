@@ -1,0 +1,8 @@
+{#- Usage: set photoSrc, photoAlt, photoClass before including -#}
+<div class="photo {{ photoClass }}">
+  {%- if photoSrc %}
+  <img src="{{ photoSrc }}" alt="{{ photoAlt }}" loading="lazy">
+  {%- else %}
+  <span class="photo-empty" aria-hidden="true">PD</span>
+  {%- endif %}
+</div>

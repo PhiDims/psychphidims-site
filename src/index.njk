@@ -1,0 +1,96 @@
+---
+layout: layouts/base.njk
+nav: home
+---
+<section class="wrap section">
+  <div class="hero">
+    <div class="copy">
+      <span class="eyebrow">{{ home.eyebrow }}</span>
+      <h1>{{ home.headline_before }} <em class="hl">{{ home.headline_highlight }}</em> {{ home.headline_after }}</h1>
+      <p class="roles">{{ settings.roles }}</p>
+      <p class="lead" style="max-width:540px">{{ home.intro }}</p>
+      <div class="btn-row" style="padding-top:6px">
+        <a class="btn btn-primary" href="#subscribe">{{ home.primary_button }}</a>
+        <a class="btn btn-outline" href="/contact/">{{ home.secondary_button }}</a>
+      </div>
+    </div>
+    <div class="photo-offset arch">
+      {%- set photoSrc = settings.images.portrait %}{% set photoAlt = "Portrait of " + settings.owner_name %}{% set photoClass = "arch" %}
+      {% include "partials/photo.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="band-dark affirmation" aria-labelledby="affirmation-label" data-affirmation>
+  <div class="wrap">
+    <div class="text">
+      <div class="meta">
+        <span class="eyebrow on-dark" id="affirmation-label">Today's Affirmation</span>
+        <span class="date" data-affirmation-date></span>
+      </div>
+      <blockquote data-affirmation-text>“{{ home.fallback_affirmation }}”</blockquote>
+    </div>
+    <div class="actions">
+      <a class="btn btn-light" href="{{ settings.affirmation_app_url }}">Open today's affirmation {% set icon = "arrow" %}{% include "partials/icon.njk" %}</a>
+      <small>{{ settings.affirmation_app_url | replace("https://", "") }}</small>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="doors-title">
+  <div class="head">
+    <span class="eyebrow">{{ home.doors_eyebrow }}</span>
+    <h2 id="doors-title">{{ home.doors_title }}</h2>
+  </div>
+  <div class="grid grid-3">
+    {%- for door in home.doors %}
+    <article class="card">
+      {% set icon = door.icon %}{% include "partials/icon.njk" %}
+      <h3>{{ door.title }}</h3>
+      <p class="grow">{{ door.text }}</p>
+      <a class="text-link" href="{{ settings.balm_url if door.link == 'balm' else door.link }}">{{ door.link_text }} →</a>
+    </article>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:var(--section)" aria-labelledby="writing-title">
+  <div class="head-row">
+    <div class="head">
+      <span class="eyebrow">From the Substack</span>
+      <h2 id="writing-title">Latest writing</h2>
+    </div>
+    <a class="text-link" href="/writing/">All posts →</a>
+  </div>
+  <div class="grid grid-3" data-substack-list data-count="3" data-variant="card">
+    {%- for i in range(0, 3) %}
+    <div class="post is-loading" aria-hidden="true"><div class="thumb"></div><span class="date">Loading</span><h3>Loading latest post</h3></div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="affiliations">
+    <span class="eyebrow plain">Roles and affiliations</span>
+    <div class="grid grid-3">
+      {%- for a in home.affiliations %}
+      <div class="affiliation"><strong>{{ a.name }}</strong><span>{{ a.role }}</span></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" aria-labelledby="about-title">
+  <div class="split">
+    {%- set photoSrc = settings.images.speaking_photo %}{% set photoAlt = settings.owner_name + " speaking" %}{% set photoClass = "" %}
+    {% include "partials/photo.njk" %}
+    <div class="copy">
+      <span class="eyebrow">About Philip</span>
+      <h2 id="about-title">{{ home.about_title }}</h2>
+      <div class="prose">{{ home.about_text | md | safe }}</div>
+      <a class="text-link" href="/about/">Read the full story →</a>
+    </div>
+  </div>
+</section>
+
+{% include "partials/newsletter.njk" %}

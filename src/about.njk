@@ -1,0 +1,74 @@
+---
+layout: layouts/base.njk
+title: About
+nav: about
+permalink: /about/
+description: About Philip Dimka — clinical psychologist, trauma therapist and play therapist in Jos, Nigeria.
+---
+<section class="wrap section">
+  <div class="hero">
+    <div class="copy">
+      <span class="eyebrow">About Philip</span>
+      <h1>{{ about.headline_before }} <em class="hl">{{ about.headline_highlight }}</em> {{ about.headline_after }}</h1>
+      <p class="lead">{{ about.intro }}</p>
+    </div>
+    <div class="photo-offset">
+      {%- set photoSrc = settings.images.about_portrait or settings.images.portrait %}{% set photoAlt = "Portrait of " + settings.owner_name %}{% set photoClass = "" %}
+      {% include "partials/photo.njk" %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap" style="padding-bottom:var(--section)" aria-labelledby="story-title">
+  <div class="story">
+    <div class="stack" style="gap:14px">
+      <span class="eyebrow">My story</span>
+      <h2 id="story-title">{{ about.story_title }}</h2>
+    </div>
+    <div class="prose">{{ about.story | md | safe }}</div>
+  </div>
+</section>
+
+<section class="band-dark" aria-labelledby="commit-title">
+  <div class="wrap section">
+    <div class="head">
+      <span class="eyebrow on-dark">How I work</span>
+      <h2 id="commit-title">{{ about.commitments_title }}</h2>
+    </div>
+    <div class="grid grid-4">
+      {%- for c in about.commitments %}
+      <div class="rule-item"><h3>{{ c.title }}</h3><p>{{ c.text }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="grid grid-2" style="gap:clamp(40px,5.5vw,80px)">
+    <div class="stack" style="gap:26px">
+      <span class="eyebrow">Clinical expertise</span>
+      <ul class="line-list serif">
+        {%- for e in about.expertise %}<li>{{ e }}</li>{%- endfor %}
+      </ul>
+      <p class="muted" style="font-size:16px">{{ about.credentials }}</p>
+    </div>
+    <div class="stack" style="gap:26px">
+      <span class="eyebrow">Current roles</span>
+      <div class="stack" style="gap:14px">
+        {%- for r in about.roles %}
+        <div class="role-card"><strong>{{ r.title }}</strong><span>{{ r.organisation }}</span></div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="panel panel-sand cta-panel">
+    <h2>{{ about.cta_title }}</h2>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="/speaking/">See speaking &amp; training</a>
+      <a class="btn btn-outline" href="/contact/">Get in touch</a>
+    </div>
+  </div>
+</section>

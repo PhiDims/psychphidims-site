@@ -1,0 +1,202 @@
+# Editing screen for psychphidims.com (Sveltia CMS)
+# Change YOUR-GITHUB-USERNAME below to the GitHub account that holds this site.
+
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/psychphidims-site
+  branch: main
+  commit_messages:
+    update: "Update {{slug}} from the editor"
+
+site_url: https://psychphidims.com
+display_url: https://psychphidims.com
+media_folder: src/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: pages
+    label: Website
+    editor: { preview: false }
+    files:
+
+      # ---------------- SITE SETTINGS ----------------
+      - name: settings
+        label: Site settings (links, photos, email)
+        file: src/_data/settings.json
+        fields:
+          - { name: site_name, label: Site name }
+          - { name: owner_name, label: Your name }
+          - { name: tagline, label: Tagline }
+          - { name: roles, label: Roles line }
+          - { name: meta_description, label: Description for Google and link previews, widget: text }
+          - { name: contact_email, label: Contact email }
+          - { name: location, label: Location }
+          - { name: reply_days, label: "Reply time in working days (e.g. 3)" }
+          - { name: substack_url, label: "Substack address (e.g. https://yourname.substack.com)" }
+          - { name: affirmation_app_url, label: Today's Affirmation app address }
+          - { name: affirmation_api_url, label: "Affirmation data address (optional, advanced)", required: false }
+          - { name: balm_url, label: Balm Therapeutic Services website }
+          - { name: web3forms_key, label: "Contact form key (from web3forms.com)", required: false }
+          - name: social
+            label: Social links
+            widget: object
+            fields:
+              - { name: facebook, label: Facebook }
+              - { name: instagram, label: Instagram }
+              - { name: substack, label: Substack }
+              - { name: youtube, label: YouTube }
+          - name: images
+            label: Photos
+            widget: object
+            fields:
+              - { name: portrait, label: Homepage portrait, widget: image, required: false }
+              - { name: about_portrait, label: About page portrait, widget: image, required: false }
+              - { name: speaking_photo, label: "Photo: speaking (homepage)", widget: image, required: false }
+              - { name: training_photo, label: "Photo: training (Speaking page)", widget: image, required: false }
+              - { name: social_share, label: "Link preview image (1200×630)", widget: image, required: false }
+          - { name: footer_note, label: Footer note, widget: text }
+          - { name: site_url, label: Website address }
+
+      # ---------------- HOME ----------------
+      - name: home
+        label: Home page
+        file: src/_data/home.json
+        fields:
+          - { name: eyebrow, label: Small line above headline }
+          - { name: headline_before, label: "Headline — first part" }
+          - { name: headline_highlight, label: "Headline — highlighted word" }
+          - { name: headline_after, label: "Headline — last part" }
+          - { name: intro, label: Introduction, widget: text }
+          - { name: primary_button, label: Main button text }
+          - { name: secondary_button, label: Second button text }
+          - { name: fallback_affirmation, label: "Affirmation shown if the app can't be reached", widget: text }
+          - { name: doors_eyebrow, label: "'Where to begin' label" }
+          - { name: doors_title, label: "Three ways — title" }
+          - name: doors
+            label: "Three ways — cards"
+            widget: list
+            fields:
+              - { name: title, label: Title }
+              - { name: icon, label: Icon, widget: select, options: [book, person, heart] }
+              - { name: text, label: Text, widget: text }
+              - { name: link_text, label: Link text }
+              - { name: link, label: "Link (use 'balm' for the Balm website)" }
+          - name: affiliations
+            label: Roles and affiliations
+            widget: list
+            fields:
+              - { name: name, label: Organisation }
+              - { name: role, label: Role }
+          - { name: about_title, label: About section title }
+          - { name: about_text, label: About section text, widget: markdown }
+          - { name: newsletter_title, label: Newsletter title }
+          - { name: newsletter_text, label: Newsletter text, widget: text }
+
+      # ---------------- ABOUT ----------------
+      - name: about
+        label: About page
+        file: src/_data/about.json
+        fields:
+          - { name: headline_before, label: "Headline — first part" }
+          - { name: headline_highlight, label: "Headline — highlighted word" }
+          - { name: headline_after, label: "Headline — last part" }
+          - { name: intro, label: Introduction, widget: text }
+          - { name: story_title, label: Story title }
+          - { name: story, label: Your story, widget: markdown }
+          - { name: commitments_title, label: Commitments title }
+          - name: commitments
+            label: Commitments
+            widget: list
+            fields:
+              - { name: title, label: Title }
+              - { name: text, label: Text, widget: text }
+          - { name: expertise, label: Clinical expertise, widget: list }
+          - { name: credentials, label: Education and certifications, widget: text }
+          - name: roles
+            label: Current roles
+            widget: list
+            fields:
+              - { name: title, label: Role }
+              - { name: organisation, label: Organisation }
+          - { name: cta_title, label: Closing invitation }
+
+      # ---------------- SPEAKING ----------------
+      - name: speaking
+        label: Speaking & Training page
+        file: src/_data/speaking.json
+        fields:
+          - { name: headline_before, label: "Headline — first part" }
+          - { name: headline_highlight, label: "Headline — highlighted words" }
+          - { name: headline_after, label: "Headline — last part", required: false }
+          - { name: intro, label: Introduction, widget: text }
+          - { name: topics_title, label: Topics title }
+          - name: topics
+            label: Topics
+            widget: list
+            fields:
+              - { name: title, label: Title }
+              - { name: text, label: Text, widget: text }
+          - { name: formats_title, label: Formats title }
+          - name: formats
+            label: Formats
+            widget: list
+            fields:
+              - { name: title, label: Title }
+              - { name: text, label: Text, widget: text }
+          - name: engagements
+            label: Recent engagements (section hides when empty)
+            widget: list
+            required: false
+            fields:
+              - { name: event, label: Event or training }
+              - { name: host, label: Host }
+              - { name: year, label: Year, required: false }
+          - name: testimonial
+            label: Quote (real, with permission — hides when empty)
+            widget: object
+            fields:
+              - { name: quote, label: Quote, widget: text, required: false }
+              - { name: name, label: Name, required: false }
+              - { name: role, label: "Role, organisation", required: false }
+          - name: steps
+            label: How to book — steps
+            widget: list
+            fields:
+              - { name: title, label: Title }
+              - { name: text, label: Text }
+
+      # ---------------- WRITING ----------------
+      - name: writing
+        label: Writing & Media page
+        file: src/_data/writing.json
+        fields:
+          - { name: headline_before, label: "Headline — first part" }
+          - { name: headline_highlight, label: "Headline — highlighted words" }
+          - { name: headline_after, label: "Headline — last part", required: false }
+          - { name: intro, label: Introduction, widget: text }
+          - name: videos
+            label: Videos and webinars (YouTube links)
+            widget: list
+            required: false
+            fields:
+              - { name: title, label: Title }
+              - { name: url, label: YouTube link }
+          - { name: affirmations_title, label: Affirmations card title }
+          - { name: affirmations_text, label: Affirmations card text, widget: text }
+          - { name: podcast_status, label: "Podcast label (e.g. Coming soon / New episodes weekly)" }
+          - { name: podcast_title, label: Podcast title }
+          - { name: podcast_text, label: Podcast text, widget: text }
+          - { name: podcast_link, label: "Podcast link (leave empty until it launches)", required: false }
+
+      # ---------------- CONTACT ----------------
+      - name: contact
+        label: Contact page
+        file: src/_data/contact.json
+        fields:
+          - { name: intro, label: "Introduction ({days} is replaced by your reply time)", widget: text }
+          - { name: therapy_title, label: Therapy note title }
+          - { name: therapy_text, label: Therapy note text, widget: text }
+          - { name: emergency_text, label: Emergency note, widget: text }
+          - { name: enquiry_types, label: Enquiry options, widget: list }
+          - { name: thanks_title, label: Thank-you page title }
+          - { name: thanks_text, label: Thank-you page text, widget: text }

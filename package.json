@@ -1,0 +1,16 @@
+{
+  "name": "psychphidims-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PsychPhiDims — personal brand website of Philip Dimka",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "markdown-it": "^14.1.0"
+  },
+  "engines": { "node": ">=18" }
+}

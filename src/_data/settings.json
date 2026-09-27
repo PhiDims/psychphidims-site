@@ -1,0 +1,30 @@
+{
+  "site_name": "PsychPhiDims",
+  "owner_name": "Philip Dimka",
+  "tagline": "Psychology, mental health, healing and growth.",
+  "roles": "Clinical Psychologist · Trauma Therapist · Play Therapist",
+  "site_url": "https://psychphidims.com",
+  "meta_description": "Philip Dimka (PsychPhiDims) — clinical psychologist, trauma therapist and play therapist in Jos, Nigeria. Writing, training and speaking on mental health, healing and growth.",
+  "contact_email": "hello@psychphidims.com",
+  "location": "Jos, Plateau State, Nigeria",
+  "reply_days": "[number]",
+  "substack_url": "https://[your-substack-name].substack.com",
+  "affirmation_app_url": "https://affirm.psychphidims.com",
+  "affirmation_api_url": "",
+  "balm_url": "#",
+  "web3forms_key": "",
+  "social": {
+    "facebook": "#",
+    "instagram": "#",
+    "substack": "#",
+    "youtube": "#"
+  },
+  "images": {
+    "portrait": "",
+    "about_portrait": "",
+    "speaking_photo": "",
+    "training_photo": "",
+    "social_share": ""
+  },
+  "footer_note": "Content here is educational and is not a substitute for therapy. For appointments, contact Balm Therapeutic Services."
+}
