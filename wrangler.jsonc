@@ -1,0 +1,16 @@
+{
+  // IMPORTANT: "name" must match your Worker's name in Cloudflare exactly.
+  "name": "psychphidims-site",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./_site",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "build": {
+    "command": "npm run build"
+  },
+  "observability": { "enabled": true }
+}
