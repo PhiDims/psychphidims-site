@@ -3,7 +3,7 @@
 
 backend:
   name: github
-  repo: phidims-4225/psychphidims-site
+  repo: PhiDims/psychphidims-site
   branch: main
   commit_messages:
     update: "Update {{slug}} from the editor"
