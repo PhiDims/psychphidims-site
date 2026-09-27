@@ -3,28 +3,28 @@
   "owner_name": "Philip Dimka",
   "tagline": "Psychology, mental health, healing and growth.",
   "roles": "Clinical Psychologist · Trauma Therapist · Play Therapist",
-  "site_url": "https://psychphidims.com",
-  "meta_description": "Philip Dimka (PsychPhiDims) — clinical psychologist, trauma therapist and play therapist in Jos, Nigeria. Writing, training and speaking on mental health, healing and growth.",
+  "meta_description": "Philip Dimka (PsychPhiDims) — clinical psychologist, trauma therapist and play therapist in Jos, Nigeria. Psychology, training and speaking on mental health, healing and growth.",
   "contact_email": "hello@psychphidims.com",
   "location": "Jos, Plateau State, Nigeria",
-  "reply_days": "[number]",
-  "substack_url": "https://[your-substack-name].substack.com",
+  "reply_days": "2",
+  "substack_url": "https://phidims.substack.com/",
   "affirmation_app_url": "https://affirm.psychphidims.com",
   "affirmation_api_url": "",
-  "balm_url": "#",
-  "web3forms_key": "",
+  "balm_url": "https://www.balmtherapeutics.com.ng/",
+  "web3forms_key": "87701f53-1d56-405c-9f0e-a2f5789c7971",
   "social": {
-    "facebook": "#",
-    "instagram": "#",
-    "substack": "#",
-    "youtube": "#"
+    "facebook": "https://www.facebook.com/phidims",
+    "instagram": "https://www.instagram.com/phidims/",
+    "substack": "https://phidims.substack.com/",
+    "youtube": "https://www.youtube.com/@PsychPhiDims"
   },
   "images": {
-    "portrait": "",
-    "about_portrait": "",
-    "speaking_photo": "",
-    "training_photo": "",
-    "social_share": ""
+    "portrait": "/images/uploads/downloadfile-2.jpeg",
+    "about_portrait": "/images/uploads/reposition-the-man-in-the-dark-suit-and-white-shir.jpeg",
+    "speaking_photo": "/images/uploads/unnamed (1).jpg",
+    "training_photo": "/images/uploads/Training.jpg",
+    "social_share": "/images/uploads/unnamed (2).jpg"
   },
-  "footer_note": "Content here is educational and is not a substitute for therapy. For appointments, contact Balm Therapeutic Services."
+  "footer_note": "Content here is educational and is not a substitute for therapy. For appointments, contact Balm Therapeutic Services.",
+  "site_url": "https://psychphidims.com"
 }
