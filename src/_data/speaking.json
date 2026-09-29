@@ -1,29 +1,72 @@
 {
-  "headline_before": "Helping the people who care for others understand trauma, and",
+  "headline_before": "Helping the people & those who care for others understand psychology, trauma, mental health and",
   "headline_highlight": "respond well",
   "headline_after": ".",
-  "intro": "For churches, schools, NGOs, humanitarian teams, universities and professional bodies. Every session is practical, interactive and adapted to your audience.",
+  "intro": "For NGOs, schools, humanitarian teams, universities, faith communities, and professional bodies. Every session is practical, interactive, and adapted to your audience.",
   "topics_title": "What I speak and train on",
   "topics": [
-    { "title": "Trauma-informed care", "text": "How trauma shapes the brain, body and behaviour, and how churches, schools and organisations can respond with safety and dignity." },
-    { "title": "Understanding children through play", "text": "Why play is a child's language, and how parents, teachers and carers can use it to connect and heal." },
-    { "title": "Healing in conflict-affected communities", "text": "Community-based trauma healing for displaced families and the leaders who serve them." },
-    { "title": "Faith and mental health", "text": "Honest conversations for pastors and congregations about emotional pain, stigma and seeking help." },
-    { "title": "Parenting for emotional health", "text": "Raising emotionally strong children and strengthening the parent–child bond." },
-    { "title": "Caring for the carers", "text": "Recognising burnout and secondary trauma in helpers, and building sustainable self-care." }
+    {
+      "title": "Trauma-informed care",
+      "text": "How trauma shapes the brain, body and behaviour, and how churches, schools and organisations can respond with safety and dignity."
+    },
+    {
+      "title": "Understanding children through play",
+      "text": "Why play is a child's language, and how parents, teachers and carers can use it to connect and heal."
+    },
+    {
+      "title": "Healing in conflict-affected communities",
+      "text": "Community-based trauma healing for displaced families and the leaders who serve them."
+    },
+    {
+      "title": "Faith and mental health",
+      "text": "Honest conversations for pastors and congregations about emotional pain, stigma and seeking help."
+    },
+    {
+      "title": "Parenting for emotional health",
+      "text": "Raising emotionally strong children and strengthening the parent–child bond."
+    },
+    {
+      "title": "Caring for the carers",
+      "text": "Recognising burnout and secondary trauma in helpers, and building sustainable self-care."
+    }
   ],
   "formats_title": "Ways we can work together",
   "formats": [
-    { "title": "Keynotes", "text": "Conferences, church gatherings and special events." },
-    { "title": "Workshops", "text": "Half-day or full-day interactive sessions for teams." },
-    { "title": "Multi-day trainings", "text": "In-depth programmes for caregivers, counsellors and field staff." },
-    { "title": "Supervision & consultation", "text": "Ongoing support for practitioners and programmes." }
+    {
+      "title": "Keynotes",
+      "text": "Conferences, church gatherings and special events."
+    },
+    {
+      "title": "Workshops",
+      "text": "Half-day or full-day interactive sessions for teams."
+    },
+    {
+      "title": "Multi-day trainings",
+      "text": "In-depth programmes for caregivers, counsellors and field staff."
+    },
+    {
+      "title": "Supervision & consultation",
+      "text": "Ongoing support for practitioners and programmes."
+    }
   ],
   "engagements": [],
-  "testimonial": { "quote": "", "name": "", "role": "" },
+  "testimonial": {
+    "quote": "",
+    "name": "",
+    "role": ""
+  },
   "steps": [
-    { "title": "Send an enquiry", "text": "Share your event, audience, date and location." },
-    { "title": "We talk it through", "text": "A short call to understand your goals and shape the session." },
-    { "title": "Confirm and prepare", "text": "Agree the details, then I tailor content to your audience." }
+    {
+      "title": "Send an enquiry",
+      "text": "Share your event, audience, date and location."
+    },
+    {
+      "title": "We talk it through",
+      "text": "A short call to understand your goals and shape the session."
+    },
+    {
+      "title": "Confirm and prepare",
+      "text": "Agree the details, then I tailor content to your audience."
+    }
   ]
 }
