@@ -40,6 +40,11 @@
       .then(function (r) { return r.ok && r.status !== 204 ? r.json() : null; })
       .then(function (data) {
         if (data && data.text && textEl) textEl.textContent = "“" + data.text + "”";
+        var refEl = aff.querySelector("[data-affirmation-reflection]");
+        if (data && data.reflection && refEl) {
+          refEl.innerHTML = "<strong>Reflect:</strong>" + esc(data.reflection);
+          refEl.hidden = false;
+        }
       })
       .catch(function () { /* keep the fallback affirmation */ });
   }

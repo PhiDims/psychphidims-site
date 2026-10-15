@@ -157,6 +157,8 @@ em.hl { font-style: italic; color: var(--accent); }
 .affirmation .meta { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
 .affirmation .date { font-size: 14px; color: var(--green-soft); }
 .affirmation blockquote { margin: 0; font-family: var(--serif); font-size: clamp(26px, 3vw, 44px); line-height: 1.25; color: var(--ground); }
+.affirmation .reflection { font-size: clamp(16px, 1.4vw, 19px); line-height: 1.6; color: var(--green-text); max-width: 760px; }
+.affirmation .reflection strong { color: var(--gold); font-weight: 700; margin-right: 6px; }
 .affirmation .actions { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .affirmation .actions small { font-size: 14px; color: var(--green-soft); }
 @media (max-width: 600px) { .affirmation .actions, .affirmation .actions .btn { width: 100%; } }

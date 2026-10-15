@@ -29,6 +29,7 @@ nav: home
         <span class="date" data-affirmation-date></span>
       </div>
       <blockquote data-affirmation-text>“{{ home.fallback_affirmation }}”</blockquote>
+      <p class="reflection" data-affirmation-reflection hidden></p>
     </div>
     <div class="actions">
       <a class="btn btn-light" href="{{ settings.affirmation_app_url }}">Open today's affirmation {% set icon = "arrow" %}{% include "partials/icon.njk" %}</a>
