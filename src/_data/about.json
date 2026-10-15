@@ -4,20 +4,46 @@
   "headline_after": "in everyday language.",
   "intro": "Philip Dimka is a clinical psychologist, trauma therapist and play therapist based in Jos, Plateau State, Nigeria. He works with adults, adolescents, children and families, and trains the people who care for them.",
   "story_title": "Why this work matters to me",
-  "story": "[Your story in your own words: what drew you to psychology, and the moment you knew trauma and children's mental health would be your life's work.]\n\nMuch of Philip's work is with conflict-affected and displaced communities in North Central Nigeria, where pain is often carried quietly and help is hard to reach. He moves between the clinic, the church and the community, translating psychology into language people can use at home, in the pulpit and in the classroom.\n\n[A closing line on what you hope people carry away from your work.]",
+  "story": "My journey into psychology began with a desire to understand people, their experiences, and the things that shape who they become. Through my work with children, adolescents, and families, I came to appreciate how deeply childhood experiences and trauma can influence emotional well-being, relationships, and development. I also discovered the remarkable capacity people have to heal and grow when they are met with understanding, safety, and the right support.\n\nThis inspired my commitment to trauma therapy, children's mental health, and play therapy. As a Clinical Psychologist and Trauma Therapist, I bring together clinical practice, research, training, and community engagement to help children find their voices, equip caregivers to respond with compassion, and create environments where healing can happen.\n\nMuch of my work is rooted in one belief: **people are more than their experiences, and their past does not have to determine their future.** My hope is to help individuals, families, and communities find the understanding, support, and courage they need to heal, grow, and thrive.",
   "commitments_title": "Four commitments behind everything I do",
   "commitments": [
-    { "title": "Clinically grounded", "text": "Evidence-based methods, practised with care and professional integrity." },
-    { "title": "Trauma-informed", "text": "Safety first. People are more than what happened to them." },
-    { "title": "Faith-integrated", "text": "Psychology and faith in honest conversation, not in competition." },
-    { "title": "Culturally rooted", "text": "Care that fits Nigerian families, languages and ways of life." }
+    {
+      "title": "Clinically grounded",
+      "text": "Evidence-based methods, practised with care and professional integrity."
+    },
+    {
+      "title": "Trauma-informed",
+      "text": "Safety first. People are more than what happened to them."
+    },
+    {
+      "title": "Faith-integrated",
+      "text": "Psychology and faith in honest conversation, not in competition."
+    },
+    {
+      "title": "Culturally rooted",
+      "text": "Care that fits Nigerian families, languages and ways of life."
+    }
   ],
-  "expertise": ["Child-Centred Play Therapy", "Theraplay", "EMDR", "Trauma-informed care"],
+  "expertise": [
+    "Child-Centred Play Therapy",
+    "Theraplay",
+    "EMDR",
+    "Trauma-informed care"
+  ],
   "credentials": "Education and certifications: [Degrees, licensure and certifications]",
   "roles": [
-    { "title": "Clinical Director", "organisation": "Balm Therapeutic Services, Jos" },
-    { "title": "Vice President", "organisation": "Association of Play Therapy Nigeria (APTN)" },
-    { "title": "Trauma Implementer Lead", "organisation": "Shalom Trauma Centre, AFS Nigeria" }
+    {
+      "title": "Clinical Director",
+      "organisation": "Balm Therapeutic Services, Jos"
+    },
+    {
+      "title": "Vice President",
+      "organisation": "Association of Play Therapy Nigeria (APTN)"
+    },
+    {
+      "title": "Trauma Implementer Lead",
+      "organisation": "Shalom Trauma Centre, AFS Nigeria"
+    }
   ],
   "cta_title": "Planning a conference, retreat or staff training?"
 }
